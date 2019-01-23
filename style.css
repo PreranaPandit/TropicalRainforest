@@ -1,0 +1,902 @@
+*{
+      margin:0px auto;
+	  padding:0px;
+}
+
+
+
+body{
+	background-image: url('images/frog.jpg');
+	background-size: 1000px 768px;
+	
+	background-repeat: no-repeat;
+	 border-top : 30px solid green;
+	background-position:center top;
+	
+	 width: 1000px;
+	 height: 768px;
+}
+
+
+/*header section*/
+
+#top #search{
+   float:right;
+   margin:-25px -28px 5px 0px;
+   padding:1.8px 8px;
+}
+
+
+.button1{
+	background-color:#f7921f;
+	color:white;
+	box-shadow:0 0 1px #F60;
+	border:none;
+	display:inline;
+	padding:3px 10px;
+	font-size:0.8em;
+	float:right;
+	margin:-25px 40px 5px 40px;
+}
+#top #username{
+	float:left;
+	padding:1.8px 3px;
+	margin:-25px 0px 5px 5px;
+
+}
+#top #password{
+	float:left;
+	padding:1.8px 3px;
+	margin:-25px 0px 5px 10px;
+
+}
+.button2{
+	background-color:#f7921f;
+	color:white;
+	box-shadow:0 0 1px #F60;
+	border:none;
+	display:inline;
+	padding:3px 10px;
+	font-size:0.8em;
+	float:left;
+	margin:-25px 0px 5px 10px;
+}
+.clear{
+	clear:both;
+}
+
+
+#bodywrapper #header{
+	background-image: url('images/green.jpg');
+	
+	height: 730px;
+	width: 290px;
+	float: left;
+}
+
+#bodywrapper #header #logo{
+	
+	height: 300px;
+	width:150px ;
+	display: inline;
+}
+
+#bodywrapper #header #logo img{
+	width: 280px;
+	height: 100px;
+	float: left;
+	padding-top: 5px;
+	padding-left: 5px;
+	display: inline;
+
+}
+
+
+
+#nav{
+	float: left;
+	display: inline;
+	box-shadow: 0px 0px 200px #3a3434;
+	font-size: 20px;
+	margin: -20px 30px;
+	
+}
+#nav,
+#nav ul,
+#nav ul li,
+#nav ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#nav ul {
+  position: relative;
+  
+  float: left;
+  padding-top:20px;
+  padding-left: 30px;
+  font-family: "Capture it";
+  font-weight: bold;
+  font-size: 23px;
+  
+}
+#nav ul li {
+  float: left;
+  min-height: 1px;
+  line-height: 1em;
+  
+  
+  display: block;
+  color: maroon;
+  text-decoration: none;
+}
+
+#nav ul li.hover,
+#nav ul li:hover {
+  position: relative;
+ 
+  cursor: default;
+  background: #bdbdc0;
+  color: black;
+	width: 120px;
+	text-decoration: underline;
+	box-shadow: 2px 2px 2px 2px;
+	font-family: "Capture it 2";
+}
+#nav ul ul {
+  margin-top: 1px;
+  visibility: hidden;
+  position: absolute;
+  top: 1px;
+  left: 99%;
+ 
+  width: 100%;
+}
+#nav ul ul li {
+  float: none;
+}
+#nav ul ul ul {
+  top: 1px;
+  left: 99%;
+}
+#nav ul li:hover > ul {
+  visibility: visible;
+}
+#nav ul li {
+  float: none;
+}
+#nav ul ul li {
+  font-weight: bold;
+}
+/* Custom CSS Styles */
+#nav {
+  font-size: 18px;
+  width: 15%;
+  
+}
+#nav ul a,
+#nav ul a:link,
+#nav ul a:visited {
+  display: block;
+  color: #191a1b;
+  text-decoration: none;
+  font-weight: 300;
+}
+#nav > ul {
+  float: none;
+}
+#nav ul {
+	background: #141515;
+	border-top: 4px solid #2fa22f;
+	border-bottom: 4px solid #2fa22f;
+}
+#nav > ul > li {
+  border-left: 3px solid #2fa22f;
+}
+#nav > ul > li > a {
+  padding: 10px 20px;
+}
+#nav > ul > li:hover {
+  border-left: 3px solid #000;
+}
+#nav ul li:hover > a {
+  color: #d78027;
+}
+#nav > ul > li:hover {
+  background: #dacfcf;
+}
+/* Sub Menu */
+#nav ul ul a:link,
+#nav ul ul a:visited {
+  font-weight: 400;
+  font-size: 14px;
+}
+#nav ul ul {
+  width: 150px;
+  background: none;
+  border-left: 20px solid black;
+}
+#nav ul ul a {
+  padding: 8px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+#nav ul ul li {
+  padding: 0 20px;
+  background: #fff;
+}
+#nav ul ul li:last-child {
+  border-bottom: 3px solid #d7d8da;
+  padding-bottom: 10px;
+}
+#nav ul ul li:first-child {
+  padding-top: 10px;
+}
+#nav ul ul li:last-child > a {
+  border-bottom: none;
+}
+#nav ul ul li:first-child:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -24px;
+  top: 13px;
+  border-left: 10px solid black;
+  border-right: 10px solid blue;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+}
+#nav ul .tri:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	position: relative;
+	left: 90%;
+	top: -18px;
+	border-left: 7px solid #968e8e;
+	border-right: 10px solid blue;
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid transparent;
+}
+#bodywrapper #header #cast{
+	clear: both;
+	padding-top: 140px;
+	padding-left: 51px;
+	padding-right: 5px;
+	text-align: justify;
+	
+}
+
+#bodywrapper #header #cast h4{
+	font-family: "Edwardian Script ITC";
+	font-size: 40px;
+	font-weight: bold;
+	color: Green;
+	
+
+}
+
+#bodywrapper #header #cast #text{
+	font-family: Lora, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	margin-right: 20px;
+	padding-right: 20px;
+	padding-top: 10px; 
+	text-align: justify;
+	color: #224d31;
+	
+
+}
+#bodywrapper #header #cast #adopt{
+	margin-top:20px;
+	margin-left:45px;
+	margin-right:85px;
+	padding:10px;
+	border:2px solid #8e0b37;
+	background-color:#28da63;
+	border-radius: 5px;
+	box-shadow: 2px 2px 8px 2px maroon;
+
+}
+#bodywrapper #header #cast #adopt p{
+	font-family: "Capture it";
+	font-size: 16px; 
+	font-weight: bold;
+
+}
+#bodywrapper #header #cast #adopt{
+		transition:transform .5s ease;
+	}
+
+	#bodywrapper #header #cast #adopt:hover{
+
+		transform:scale(1.1);
+		cursor: pointer;
+	}
+#bodywrapper #header #cast #adopt a{
+	text-decoration: none;
+	color: green;
+	display: block;
+}
+
+#bodywrapper #header #cast #adopt a:hover{
+	text-decoration: none;
+	color: green;
+	font-size: 20px;
+	display: block;
+}
+/*header ends1*/
+
+
+
+/*index contents starts */
+
+#bodywrapper #content1{
+	width: 1000px;
+	height: 800px;
+
+	
+}
+
+#bodywrapper #content1 h1{
+font-family: "Algerian";
+color: #f9fce6;
+font-size: 40px;
+word-spacing: 2px;
+letter-spacing: 1px;
+padding-top: 10px;
+padding-left: 390px;
+}
+
+#bodywrapper #content1 h4{
+	padding-top: 400px;
+	padding-left: 20px;
+	font-family: "Monotype Corsiva";
+	float: left;
+	font-size: 30px	;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	color: #fff;
+
+}
+#bodywrapper #content1 p{
+	
+	font-family: lora;
+	font-weight: bold;
+	font-size: 20px;
+	padding-left: 425px;
+	padding-right: 50px;
+	padding-top: 430px;
+	text-indent: 70px;	
+	letter-spacing: 0.5px;
+	word-spacing: -1px;
+	color: #fff;
+	font-weight: lighter;
+	font-style: italic;
+	line-height: 25px;
+	display: inline; 
+	text-align: justify;
+
+
+}
+#newslogo img{
+margin-right: 400px;
+padding-left: 700px;
+padding-bottom: 10px;
+width: 270px;
+float:left;
+}
+#newslogo email{
+margin-right: 800px;
+padding-left: 750px;
+display:inline;
+float: left;
+}
+.button3{
+	background-color:green;
+	color:white;
+	box-shadow:0 0 1px #fff;
+	border:none;
+	display:inline-block;
+	float:left;
+	text-align:center;
+	font-size: 14px;
+	padding-left:20px;
+	margin-left: 600px;
+	padding-bottom:12px;
+	padding-top: 10px;
+	padding-right: 20px;
+	border-radius: 50%;
+}
+.button3:hover{
+	color: #fff;
+    background-color:blue;
+	text-decoration: underline;
+	box-shadow: 2px 2px 2px 2px;
+	font-family: "Capture it 2";
+}
+#footer{
+background-image: url('images/round.jpg');
+background-repeat: no-repeat;
+background-size: 1024px 330px;
+	height: 770px;
+	 width: 1024px;
+	 padding-bottom: 120px;
+	 
+}
+
+
+
+
+/*content ends*/
+
+/* history css begains and Education contents starts*?
+
+/*contents starts */
+#bodywrapper #content2{
+	width: 1000px;
+	height: 710px;
+	
+
+
+	background-position:center top;
+	background-image: url('images/leaf.jpg');
+	
+	
+	border:2px solid white;
+	
+	
+}
+
+#bodywrapper h2{
+	text-align:center;
+	color: #fff;
+	font-family:"Edwardian Script ITC";
+	font-size:60px;
+	border-bottom: 3px solid white;
+	border-right: 3px solid white;
+}
+#bodywrapper #content2 p{
+	margin: 20px;
+	word-spacing:3px;
+	line-height:25px;
+	text-align:justify;
+	color:#fff;
+	font-size:18px;
+	font-family:lora;
+	font-weight:bold;
+	font-style:italic;
+	text-align: justify;
+}
+#bodywrapper #content2 video{
+	position:absolute;
+	border: 10px outset #ddd;
+	}
+	
+	
+	#paragraph{
+		border-top: 2px solid white;
+		border-right: 2px solid white;
+		margin-top:320px;
+	}
+	.aa{
+		margin:10px;
+		height:135px;
+		width:15%;
+		float:left;
+		border: 2px solid white;
+		border-radius:50%
+	
+	}
+	
+
+ 	
+	/*content ends*/
+
+	
+/*Adopt an animal contents starts */
+
+
+
+#bodywrapper #content3{
+	width: 1000px;
+	height: 700px;
+	
+}
+#bodywrapper #content3{
+	width: 1000px;
+	height: 730px;	
+	background-position:center top;
+	background-image: url('images/leaf.jpg');
+	border:2px solid white;
+}
+
+#bodywrapper #top3 h2{
+	font-family: "Edwardian Script ITC";	
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	box-shadow: 2px	 2px 2px black;
+}
+
+#bodywrapper #content3 img{
+	width: 150px;
+	margin-top: 10px;	
+	display: inline;
+	padding: 20px;
+	height: 150px;
+}
+
+#bodywrapper #content3 #no1{
+	float: left;
+
+}
+
+#bodywrapper #content3 h3{
+	color:#fff;
+	margin-top: 10px;
+	
+}
+#bodywrapper #content3 p{
+letter-spacing: 1px;
+	word-spacing: 2px;
+	font-weight: bold;
+	font-family:lora; 
+	font-style:italic;
+	font-size: 18px;	
+	margin-left: 100px;
+	text-indent: 50px;
+	color: white;
+	text-align: justify;
+}
+
+#bodywrapper #content3 ul{
+background: #3399ff;
+padding: 20px;
+
+}
+
+#bodywrapper #content3 ul li{
+letter-spacing: 1px;
+	word-spacing: 2px;
+	font-family:lora; 
+	list-style-type:square;
+	font-size: 18px;	
+	margin-left: 400px;
+	color: black;
+	text-align: justify;
+	background: #cce5ff;
+
+	
+}
+#bodywrapper #content3 img{
+		transition:transform .5s ease;
+		margin-left: 30px;
+		
+	}
+
+	#bodywrapper #content3 img:hover{
+
+		transform:scale(1.3);
+		cursor: pointer;
+	}
+#bodywrapper #content3 #no1 h3{
+	font-family: "lora";
+	font-size: 20px;
+    margin-left:45px;
+	
+}
+#bodywrapper #content3 #no2 h3{
+	font-family: "lora";
+	font-size: 20px;
+	text-align: left;
+	margin-left: 70px;
+}
+#bodywrapper #content3 #no3 h3{
+	font-family: "lora";
+	font-size: 20px;
+	margin-left: 770px;
+}
+#bodywrapper #content3 #no4 h3{
+	font-family: "lora";
+	font-size: 20px;
+	margin-left: 20px;
+}
+#bodywrapper #content3 #no5 h3{
+	font-family: "lora";
+	font-size: 20px;
+	margin-left: 80px;
+}
+#bodywrapper #content3 #no6 h3{
+	font-family: "lora";
+	font-size: 20px;
+	margin-left: 80px;
+
+}
+#bodywrapper #content3 #no2{
+	float: left;
+}
+#bodywrapper #content3 #no3{
+	clear: both;
+	display: inline;
+}
+#bodywrapper #content3 #no4{
+	float: left;
+}
+#bodywrapper #content3 #no5{
+	float:left;
+}
+#bodywrapper #content3 #no6{
+	float: left;
+}
+
+
+/*content ends*/
+
+/*Community content begins here*/
+
+#content4{
+	width:1000px;
+	height:800px;
+}
+
+#content4 #top4{
+	width: 650px;
+	background-image: url('images/leaf.jpg');
+	padding: 20px;
+	margin-left: 300px;
+	border:2px solid white;
+	height: 690px;
+	position:absolute;
+}
+#top4 h2{
+	border-bottom:3px  solid white;
+	font-size:30px;
+	font-family: "Monotype Corsiva";
+	
+	
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	color: #fff;
+}
+#content4 p{
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	
+	font-family:lora;
+    
+	font-style:italic;
+	font-size: 18px;
+	margin-top: 20px;
+	text-indent: 50px;
+	color: white;
+	text-align: justify;
+
+}
+
+#top4 p1{
+letter-spacing: 1px;
+	word-spacing: 2px;
+	font-weight: bold;
+	font-family:lora;
+    text-decoration:underline;
+	font-style:italic;
+	font-size: 18px;
+	margin-top: 20px;
+	text-indent: 50px;
+	color: white;
+	text-align: justify;
+}
+ol li{ 
+letter-spacing: 1px;
+	word-spacing: 2px;
+	list-style-type: none;
+	font-family:lora;
+    font-weight: bold;
+	
+	font-size: 20px;
+	margin-left: 50px;
+	margin-left: 40px;
+	margin-top: 10px;
+	text-indent: 50px;
+	color: white;
+	text-align: justify;
+}
+	#top4 img{
+	width: 170px;
+	height: 150px;
+	border: 1px solid #fff;
+	padding: 10px;
+	margin:20px 10px 10px 10px;
+	border-radius: 15px;
+	margin-left: 10px;
+	float:left;
+}
+#top4 img:hover{
+
+		transform:scale(1.3);
+		cursor: pointer;
+	}
+	
+	.buttonP{
+	background-color:orange;
+	color:black;
+	box-shadow:0 0 1px #fff;
+	border:none;
+	display:inline-block;
+	float:left;
+	text-align:center;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left:20px;
+	margin-left: 300px;
+	margin-top: 50px;
+	padding-bottom:12px;
+	padding-top: 10px;
+	padding-right: 20px;
+	
+}
+
+.buttonP:hover{
+	color: #d52028;
+
+	text-decoration: underline;
+	box-shadow: 2px 2px 2px 2px;
+	font-family: "Capture it 2";
+}
+
+#bodywrapper #content4 td{
+	padding-left: 30px;
+	padding-top: 26px;
+	font-size:20px;
+	color:white;
+}
+
+#comm{
+
+	font-size:0.8em;
+	margin-top: 5px;
+	margin-left: 190px;
+    height: 100px;
+}
+
+#bodywrapper #content4 #pic1 img{
+width: 550px;
+	height:300px;
+	float: left;
+	padding: 10px;
+	margin-top: 20px;
+	margin-left: 20px;
+	box-shadow: 2px 2px 30px 2px grey;	
+	border-radius: 20px;
+}
+
+#top4 #post a{
+color: orange;
+margin-top:90%;
+font-size: 20px;
+font-weight: bold;
+margin-left: 150px;
+}	
+
+/*content ends*/
+
+
+
+
+
+/*get involved content*/
+
+	#bodywrapper #content7{
+	width: 1000px;
+	height: 630px;
+	
+}
+#bodywrapper #content7{
+	width: 900px;
+	height: 615px;
+	
+
+
+	background-position:center top;
+	background-image: url('images/leaf.jpg');
+	
+	
+	border:2px solid white;
+
+}
+
+	#bodywrapper #top7 h1{
+	font-family: "Edwardian Script ITC";
+	font-size: 60px;
+	text-align: center;
+	color: #fff;
+	box-shadow: 2px	 2px 2px white;
+}
+#bodywrapper #content7 p{
+letter-spacing: 1px;
+	word-spacing: 2px;
+	font-weight: bold;
+	font-family:lora;
+    text-decoration:underline;
+	font-style:italic;
+	font-size: 18px;
+	
+	margin-left: 100px;
+	text-indent: 50px;
+	color: white;
+	text-align: justify;
+}
+
+#bodywrapper #content7{
+	margin-top: 5px;
+	padding: 40px;
+}
+#bodywrapper #content7 td{
+	padding-left: 50px;
+	padding-top: 15px;
+	font-size:20px;
+	color:white;
+}
+
+.button{
+	padding:5px 10px;
+	font-size:0.8em;
+	margin-top: 20px;
+	color: black;
+	font-weight: bold;
+	background-color: orange;
+}
+
+.button:hover{
+	color: #fff;
+    background-color:blue;
+	text-decoration: underline;
+	box-shadow: 2px 2px 2px 2px;
+	font-family: "Capture it 2";
+}
+
+
+/*content ends*/
+
+/*footer starts here*/
+#bodywrapper #footer  {
+	
+	
+	margin-top: -50px;
+
+	text-align: center;
+	height: 200px;
+	width: 1000px;
+	padding-top: 10px;
+}
+
+
+
+
+#bodywrapper #footer h4{
+	border-top:3px solid grey;
+	font-size: 24px;
+	font-family: "Copperplate Gothic Light";
+	padding: 10px; 
+}
+
+
+#bodywrapper #footer #soclogo a{
+	padding: 10px;
+
+}
+
+
+#bodywrapper #footer #end{
+    color: white;
+	font-family: "Copperplate Gothic Light";
+	padding-top: 25px;
+}
+
+
+
